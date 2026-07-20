@@ -20,6 +20,7 @@ function ScenarioScreen({ scenario, step, branch, stepNumber, totalSteps, select
         {content.options.map((opt, i) => (
           <button
             key={i}
+            className="option-card"
             onClick={() => onChoose(opt)}
             style={{
               ...styles.option,
