@@ -1,31 +1,25 @@
 import styles from "../styles/styles";
-import { SILVER } from "../styles/theme";
+import { SILVER, LINE, TEAL } from "../styles/theme";
 
 function TriangleChart({ techPct, ethicalPct, commercialPct }) {
-  const t = techPct / 100;
   const e = ethicalPct / 100;
   const c = commercialPct / 100;
-  const xFrac = 0.5 * e + c;
-  const yFrac = 1 - e;
+  const dotX = 50 * e + 100 * c;
+  const dotY = (1 - e) * 100;
 
-return (
+  return (
     <div style={styles.triangleOuter}>
       <div style={styles.triangleCaptionTop}>Ethical</div>
       <div style={styles.triangleSquare}>
-        <div style={styles.triangleShape}>
-          <svg viewBox="0 0 100 100" preserveAspectRatio="none" style={styles.trianglePartitions}>
-            <line x1="50" y1="2" x2="50" y2="98" stroke={SILVER} strokeWidth="0.6" strokeDasharray="3 3" vectorEffect="non-scaling-stroke" />
-            <line x1="2" y1="98" x2="74" y2="50" stroke={SILVER} strokeWidth="0.6" strokeDasharray="3 3" vectorEffect="non-scaling-stroke" />
-            <line x1="98" y1="98" x2="26" y2="50" stroke={SILVER} strokeWidth="0.6" strokeDasharray="3 3" vectorEffect="non-scaling-stroke" />
-          </svg>
-        </div>
-        <div
-          style={{
-            ...styles.triangleDot,
-            left: `${xFrac * 100}%`,
-            top: `${yFrac * 100}%`,
-          }}
-        />
+        <svg viewBox="0 0 100 100" style={styles.triangleSvg}>
+          <polygon points="50,2 2,98 98,98" fill="#FFFFFF" stroke={LINE} strokeWidth="1" />
+
+          <line x1="50" y1="2" x2="50" y2="98" stroke={SILVER} strokeWidth="0.5" strokeDasharray="2 2" />
+          <line x1="2" y1="98" x2="74" y2="50" stroke={SILVER} strokeWidth="0.5" strokeDasharray="2 2" />
+          <line x1="98" y1="98" x2="26" y2="50" stroke={SILVER} strokeWidth="0.5" strokeDasharray="2 2" />
+
+          <circle cx={dotX} cy={dotY} r="2.4" fill={TEAL} stroke="#FFFFFF" strokeWidth="0.6" />
+        </svg>
       </div>
       <div style={styles.triangleCaptionRow}>
         <span>Technical</span>
