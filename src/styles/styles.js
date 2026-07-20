@@ -160,7 +160,7 @@ option: {
     transition: "border-color 140ms cubic-bezier(0.22, 1, 0.36, 1), background 140ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 140ms cubic-bezier(0.22, 1, 0.36, 1)",
   },
   optionSelected: {
-    borderColor: TEAL,
+    border: `1px solid ${TEAL}`,
     background: TEAL_SOFT,
     boxShadow: "0 2px 6px rgba(32,32,32,0.07), 0 1px 2px rgba(32,32,32,0.04)",
   },
