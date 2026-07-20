@@ -490,30 +490,10 @@ option: {
     width: "100%",
     aspectRatio: "1 / 0.92",
   },
-  triangleShape: {
-    position: "absolute",
-    inset: 0,
-    background: "#FFFFFF",
-    border: `1px solid ${LINE}`,
-    boxShadow: "0 1px 2px rgba(32,32,32,0.06)",
-    clipPath: "polygon(50% 2%, 2% 98%, 98% 98%)",
-  },
-  trianglePartitions: {
-    position: "absolute",
-    inset: 0,
+  triangleSvg: {
     width: "100%",
     height: "100%",
-    pointerEvents: "none",
-  },
-  triangleDot: {
-    position: "absolute",
-    width: "16px",
-    height: "16px",
-    borderRadius: "50%",
-    background: TEAL,
-    border: "2px solid #FFFFFF",
-    boxShadow: `0 0 0 1px ${TEAL}, 0 4px 10px rgba(29,126,139,0.35)`,
-    transform: "translate(-50%, -50%)",
+    display: "block",
   },
   scorePairRow: {
     display: "flex",
