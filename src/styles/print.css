@@ -1,0 +1,15 @@
+@media print {
+  @page {
+    margin: 18mm;
+  }
+  .no-print {
+    display: none !important;
+  }
+  body,
+  html {
+    background: #ffffff !important;
+  }
+  * {
+    box-shadow: none !important;
+  }
+}
