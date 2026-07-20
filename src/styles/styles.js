@@ -146,13 +146,12 @@ const styles = {
     gap: "12px",
     marginBottom: "40px",
   },
-  option: {
+option: {
     textAlign: "left",
     fontFamily: FONT_SANS,
     fontSize: "16px",
     lineHeight: 1.5,
     color: INK,
-    background: "#FFFFFF",
     border: `1px solid ${LINE}`,
     borderRadius: "10px",
     padding: "16px 18px",
