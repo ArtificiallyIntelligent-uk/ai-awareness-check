@@ -20,6 +20,7 @@ function ConfidenceScreen({ confidenceIndex, onChoose, onNext, onBack }) {
         {CONFIDENCE_OPTIONS.map((opt) => (
           <button
             key={opt.index}
+            className="option-card"
             onClick={() => onChoose(opt.index)}
             style={{
               ...styles.option,
