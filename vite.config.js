@@ -7,5 +7,5 @@ export default defineConfig({
 
 export default defineConfig({
   plugins: [react()],
-  base: "/repo-name/",
+  base: "/ai-awareness-check/",
 });
