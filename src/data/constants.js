@@ -16,4 +16,4 @@ export const NEWCOMER_FLAG_THRESHOLD = 5;
 // TODO: confirm the final URL once the assessment has a permanent home,
 // then update this single constant — it's used on the share links and
 // the shareable result image.
-export const SITE_URL = "artificiallyintelligent.uk";
+export const SITE_URL = "https://artificiallyintelligent-uk.github.io/ai-awareness-check/";
