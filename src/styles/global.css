@@ -29,3 +29,11 @@ button {
 .option-card:hover {
   background-color: rgba(29, 126, 139, 0.06);
 }
+
+.option-card:focus {
+  outline: none;
+}
+.option-card:focus-visible {
+  outline: 2px solid #1d7e8b;
+  outline-offset: 2px;
+}
