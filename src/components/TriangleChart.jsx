@@ -8,7 +8,7 @@ function TriangleChart({ techPct, ethicalPct, commercialPct }) {
   const xFrac = 0.5 * e + c;
   const yFrac = 1 - e;
 
-  return (
+return (
     <div style={styles.triangleOuter}>
       <div style={styles.triangleCaptionTop}>Ethical</div>
       <div style={styles.triangleSquare}>
@@ -18,14 +18,14 @@ function TriangleChart({ techPct, ethicalPct, commercialPct }) {
             <line x1="2" y1="98" x2="74" y2="50" stroke={SILVER} strokeWidth="0.6" strokeDasharray="3 3" vectorEffect="non-scaling-stroke" />
             <line x1="98" y1="98" x2="26" y2="50" stroke={SILVER} strokeWidth="0.6" strokeDasharray="3 3" vectorEffect="non-scaling-stroke" />
           </svg>
-          <div
-            style={{
-              ...styles.triangleDot,
-              left: `${xFrac * 100}%`,
-              top: `${yFrac * 100}%`,
-            }}
-          />
         </div>
+        <div
+          style={{
+            ...styles.triangleDot,
+            left: `${xFrac * 100}%`,
+            top: `${yFrac * 100}%`,
+          }}
+        />
       </div>
       <div style={styles.triangleCaptionRow}>
         <span>Technical</span>
